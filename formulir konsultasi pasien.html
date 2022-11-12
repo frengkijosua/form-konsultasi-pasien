@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Konsultasi Pasien</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="container">	<h1>Form Konsultasi Pasien</h1>
+	<form action="" method="">
+		<table>
+			<tbody><tr>
+				<td>Nama Lengkap</td>
+				<td>:</td>
+				<td><input type="text" pattern="[A-Za-z]{1,30}" requiredtitle="harus isi nama 1-30 huruf dan tidak boleh ada angka" name="nama_lengkap"></td>
+			</tr>
+			<tr>
+				<td>Usia</td>
+				<td>:</td>
+				<td><input type="age" name="usia" pattern="{60}" title="harus memasukkan angka" required></td>
+			</tr>
+			<tr>
+				<td>Alamat</td>
+				<td></td>
+				<td><textarea name="alamat"></textarea></td>
+			</tr>
+			<tr>
+				<td>Tempat Lahir</td>
+				<td>:</td>
+				<td><input type="text" name="tempat_lahir"></td>
+			</tr>
+			<tr>
+				<td>Tanggal Lahir</td>
+				<td>:</td>
+				<td><input type="date" name="tanggal_lahir"></td>
+			</tr>
+			<tr>
+				<td>Jenis Kelamin</td>
+				<td>:</td>
+				<td>
+					<input type="radio" name="jk" value="Laki-Laki">Laki-Laki
+					<input type="radio" name="jk" value="Perempuan">Perempuan
+				</td>
+			</tr>
+			<tr>
+				<td>No Telepon</td>
+				<td>:</td>
+				<td><input type="number" name="no_telepon"></td>
+			</tr>
+			<td>Riwayat Peyakit:</td>
+			<td>:</td>
+			<td><select>
+				<option>Batuk/Pilek</option>
+				<option>Batuk Berdahak</option>
+				<option>Demam</option>
+				<option>Flu</option>
+				<option>Asma</option>
+				<option>Meriang</option>
+				<option>Maag</option>
+				<option>Hyper Tensi</option>
+				<option>Alergi</option>
+				<option>Diare</option>
+				<option>Hepatitis</option>
+				<option>HIV/AIDS</option>
+				<option>COVID-19k</option>
+			</select></td>
+			<tr>
+				<td>Keluhan Pasien</td>
+				<td>:</td>
+				<td><textarea name="Keluhan Anda apa?" text pattern="[A-Za=a-z]{10000,}" title="Yang sabar ya wkwkwkwk" required></textarea></td>
+			</tr>
+			<tr>
+				<td>email</td>
+				<td>:</td>
+				<td><input type="text" name="email"></td>
+			</tr>
+			<tr>
+				<td>Kecamatan</td>
+				<td>:</td>
+				<td>
+					<select name="Kecamatan">
+						<option>--Pilih Kecamatan</option>
+						<option>Cengkareng</option>
+						<option>Grogol Petamburan</option>
+						<option>Kali Deres</option>
+						<option>Kebun Jeruk</option>
+						<option>Kembangan</option>
+						<option>Palmerah</option>
+						<option>Taman Sari</option>
+						<option>Tambora</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>
+					<button type="submit" name="kirim">kirim</button>
+					<button type="reset" name="reset">Batal</button>
+				</td>
+				</tr>
+			</tbody></table>
+		
+	</form>
+	</div>
+
+</div>
+
+</body></html>
